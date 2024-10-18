@@ -228,7 +228,6 @@ canvas {
     background-position: top;
     background-position: 0px 60px;
     padding-top: 100px;
-
 }
 
 #section .card_promo .main1 p:nth-child(1) {
@@ -242,7 +241,7 @@ canvas {
     font-weight: bold;
     animation: scale 4s ease-in-out infinite;
     display: inline-block;
-
+    margin-right: 10px;
 }
 
 #section .card_promo .main1 .z_index {
