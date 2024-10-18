@@ -72,6 +72,10 @@ canvas {
     font-family: 'NEXON Lv1 Gothic OTF';
 }
 
+#section {
+    /* font-family: 'NEXON Lv1 Gothic OTF'  */
+}
+
 #header .gnb2 {
     /* display: none; */
     width: 100%;
@@ -168,11 +172,11 @@ canvas {
     margin: 20px 0px;
 } */
 #header .gnb2 .gnb_al .menu:hover .sub {
-    display: block;
+    /* display: block; */
     width: 200px;
     height: 284px;
     background-color: white;
-    z-index: 100000;
+    z-index: 10;
 }
 
 #header .gnb2 .gnb_al .menu .sub li:hover a {
@@ -238,6 +242,11 @@ canvas {
     font-weight: bold;
     animation: scale 4s ease-in-out infinite;
     display: inline-block;
+
+}
+
+#section .card_promo .main1 .z_index {
+    z-index: 1;
 }
 
 @keyframes scale {
@@ -388,17 +397,11 @@ canvas {
 
 #section .main2_wrapper .txt_box p {
     font-size: 35pt;
-    /* /* position: absolute; */
-    /* left: 0px; */
-    /* top: 0px; */
-    /* text-align: center; */
-    /* z-index: 1; */
-    width: 180px;
+    width: 190px;
     height: 33px;
-    /* background-color: linear-gradient(to top, #f26622, transparent); */
-    /* background-color: #f26622; */
-    /* bottom: ; */
 }
+
+#section .main2_wrapper .txt_box {}
 
 #section .main2_wrapper .txt_box .tp::before {
     content: "";
@@ -440,6 +443,7 @@ canvas {
     top: 150px;
     transition: all 1s ease;
     /* opacity: ; */
+    cursor: pointer;
 }
 
 #section .card_promo .main2 .card_img1.on {
@@ -475,6 +479,7 @@ canvas {
     box-sizing: border-box;
     backface-visibility: hidden;
     transition: all 1s ease;
+    cursor: pointer;
 }
 
 
@@ -561,6 +566,7 @@ canvas {
     transform: translateX(-50%);
     top: 150px;
     transition: all 1s ease;
+    cursor: pointer;
 }
 
 #section .card_promo .main3 .card_img2.on {
@@ -593,6 +599,7 @@ canvas {
     box-sizing: border-box;
     backface-visibility: hidden;
     transition: all 1s ease;
+    cursor: pointer;
 }
 
 /* main4영역------------------------------------ */
@@ -640,14 +647,14 @@ canvas {
     position: absolute;
     left: -550px;
     top: 150px;
-    text-align: center;
+    /* text-align: center; */
     z-index: 1;
     opacity: 0;
 }
 
 #section .card_promo .main4 p:nth-child(2).on {
     opacity: 1;
-    left: 150px;
+    left: 100px;
 }
 
 #section .card_promo .main4 .blue_line {
@@ -664,7 +671,7 @@ canvas {
 
 #section .card_promo .main4 .blue_line.on {
     opacity: 1;
-    left: 150px;
+    left: 100px;
 }
 
 #section .card_promo .main4 .card_img3 {
@@ -676,6 +683,7 @@ canvas {
     transform: translateX(-50%);
     top: 150px;
     transition: all 1s ease;
+    cursor: pointer;
 }
 
 #section .card_promo .main4 .card_img3.on {
@@ -708,6 +716,7 @@ canvas {
     box-sizing: border-box;
     backface-visibility: hidden;
     transition: all 1s ease;
+    cursor: pointer;
 }
 
 /* -----------card_img_cont------------------- */

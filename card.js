@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $(".menu").hover(function () {
+        $(".sub").stop().slideToggle();
+    });
     // .main2 요소의 offset().top 값을 가져옴
 
     const main1OffsetTop = $(".main1").offset().top; // 0
