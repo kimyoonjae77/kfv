@@ -396,7 +396,7 @@ canvas {
 
 #section .main2_wrapper .txt_box p {
     font-size: 35pt;
-    width: 190px;
+    width: 200px;
     height: 33px;
 }
 
@@ -405,6 +405,7 @@ canvas {
 #section .main2_wrapper .txt_box .tp::before {
     content: "";
     position: absolute;
+    width: 180px;
     bottom: 30px;
     left: 0;
     right: 0;

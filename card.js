@@ -2,7 +2,6 @@ $(document).ready(function () {
     $(".menu").hover(function () {
         $(".sub").stop().slideToggle();
     });
-    // .main2 요소의 offset().top 값을 가져옴
 
     const main1OffsetTop = $(".main1").offset().top; // 0
     const main2OffsetTop = $(".main2").offset().top; // 997
@@ -10,7 +9,6 @@ $(document).ready(function () {
     const main4OffsetTop = $(".main4").offset().top; //2423
     const footerOffsetTop = $("#footer").offset().top;
     console.log(main2OffsetTop);
-    // 특정 위치에 도달했을 때 실행될 함수
     function handleScroll() {
         const scrollPosition =
             window.scrollY || document.documentElement.scrollTop;
@@ -18,7 +16,6 @@ $(document).ready(function () {
         targetElements.forEach(function (target) {
             // target.removeClass("on");
         });
-        //  // 예를 들어, .main3 위치에 따라 다른 요소를 처리하는 경우
         if (
             scrollPosition >= main1OffsetTop &&
             scrollPosition < main2OffsetTop
@@ -42,7 +39,6 @@ $(document).ready(function () {
         }
     }
 
-    // 스크롤 이벤트를 감지하여 handleScroll 함수 실행
     window.addEventListener("scroll", handleScroll);
 
     $(".card_img1").click(function () {
@@ -85,10 +81,7 @@ $(document).ready(function () {
     });
 
     $(document).click(function (e) {
-        if (
-            // !$(e.target).closest(".modal").length &&
-            !$(e.target).closest(".card_img1").length
-        ) {
+        if (!$(e.target).closest(".card_img1").length) {
             $(".card_img1").css({
                 transform: "rotateY(0deg) translateX(50%)",
                 opacity: "1",
@@ -100,10 +93,7 @@ $(document).ready(function () {
             });
         }
 
-        if (
-            // !$(e.target).closest(".modal").length &&
-            !$(e.target).closest(".card_img2").length
-        ) {
+        if (!$(e.target).closest(".card_img2").length) {
             $(".card_img2").css({
                 transform: "rotateY(0deg) translateX(-50%)",
                 opacity: "1",
@@ -115,10 +105,7 @@ $(document).ready(function () {
             }, 0);
         }
 
-        if (
-            // !$(e.target).closest(".modal").length &&
-            !$(e.target).closest(".card_img3").length
-        ) {
+        if (!$(e.target).closest(".card_img3").length) {
             $(".card_img3").css({
                 transform: "rotateY(0deg) translateX(-50%)",
                 opacity: "1",
