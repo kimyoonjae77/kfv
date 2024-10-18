@@ -3,6 +3,16 @@ $(document).ready(function () {
         $(".sub").stop().slideToggle();
     });
 
+    $(".lag").click(function () {
+        $(".lag_block").stop().slideDown();
+    });
+    $(".lag_block>li").click(function () {
+        let i = $(this).index();
+        $(".lag>li").stop().removeClass("lag_on");
+        $(".lag>li").eq(i).stop().addClass("lag_on");
+        $(".lag_block").stop().slideUp();
+    });
+
     const main1OffsetTop = $(".main1").offset().top; // 0
     const main2OffsetTop = $(".main2").offset().top; // 997
     const main3OffsetTop = $(".main3").offset().top; //1715
