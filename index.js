@@ -84,4 +84,19 @@ $(document).ready(function(){
     "transform": "rotateY("+(-currdeg)+"deg)"
     });
     }
+
+    $(".menu").hover(function(){
+        $(".sub").stop().slideToggle();
+    });
+
+    $(".lag").click(function(){
+        $(".lag_block").stop().slideDown();
+    });
+    $(".lag_block>li").click(function(){
+        let i = $(this).index();
+        $(".lag>li").stop().removeClass("lag_on")
+        $(".lag>li").eq(i).stop().addClass("lag_on")
+        $(".lag_block").stop().slideUp();
+    })
+    
 });
